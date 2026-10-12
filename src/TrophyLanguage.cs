@@ -1,0 +1,56 @@
+using Il2Cpp;
+namespace BurebistaAnimalTrophies;
+internal static class TrophyLanguage {
+ internal static bool English;
+ internal static void Refresh(){try{English=(Localization.Language??"").StartsWith("English",StringComparison.OrdinalIgnoreCase);}catch{}}
+ internal static string Text(string text)=>English&&english.TryGetValue(text,out var value)?value:text;
+ internal static string SpeciesName(int kind)=>Text(Rules.Names[kind]);
+ static readonly Dictionary<string,string> english=new(StringComparer.Ordinal){
+  ["bure_skull Wolf|Cougar|Bear|Deer|Moose: recibir un cráneo sin preparar"] = "bure_skull Wolf|Cougar|Bear|Deer|Moose: receive an unprepared skull",
+  ["Uso: bure_skull Wolf|Cougar|Bear|Deer|Moose"] = "Usage: bure_skull Wolf|Cougar|Bear|Deer|Moose",
+  ["Cantidad válida: de 1 a 100."] = "Valid amount: 1 to 100.",
+  ["TROFEOS — F9 muestra/oculta esta ayuda"] = "TROPHIES — F9 show/hide this help",
+  ["Ctrl + Alt + F11: menú | 1 Lobo · 2 Puma · 3 Oso · 4 Ciervo · 5 Alce\nEnter: fijar · ↑/↓: distancia · ←/→: girar · Esc: cancelar\nPara recoger: apunta al trofeo, abre el menú y pulsa 6."] = "Ctrl + Alt + F11: menu | 1 Wolf · 2 Cougar · 3 Bear · 4 Deer · 5 Moose\nEnter: confirm · ↑/↓: distance · ←/→: rotate · Esc: cancel\nTo pick up: aim at the trophy, open the menu and press 6.",
+  ["Trofeo de cráneo: "] = "Skull trophy: ",
+  ["Cráneo sin preparar: "] = "Unprepared skull: ",
+  ["Falta plantilla nativa para los trofeos"] = "Native trophy template missing",
+  ["Carga una partida antes de entregar cráneos"] = "Load a save before adding skulls",
+  ["No se pudo añadir el cráneo al inventario"] = "Could not add the skull to your inventory",
+  ["Cráneo natural montado en una placa de madera. Puedes soltarlo al suelo con Dejar. Para colgarlo desde la mochila: Ctrl+Alt+F11, elige la especie. Enter: fijar; flechas: ajustar. Ctrl+Alt+F11 y 6: recoger."] = "Natural skull mounted on a wooden plaque. Drop it onto the ground with Drop. To mount it from your backpack: Ctrl+Alt+F11, then choose the species. Enter: confirm; arrows: adjust. Ctrl+Alt+F11 and 6: pick up.",
+  ["Cráneo recuperado al despiezar un animal. Prepara el trofeo en un banco de trabajo con herramientas, madera recuperada y tripa curada."] = "Skull recovered while harvesting an animal. Prepare the trophy at a workbench with tools, reclaimed wood and cured gut.",
+  ["Añadido: "] = "Added: ",
+  ["No se pudo entregar el cráneo. Consulta el registro del mod."] = "Could not add the skull. Check the mod log.",
+  ["No has recuperado un cráneo de este animal (50 % de probabilidad)."] = "You did not recover a skull from this animal (50% chance).",
+  ["Has recuperado un cráneo de "] = "You recovered a skull from a ",
+  [". Prepáralo en un banco de trabajo."] = ". Prepare it at a workbench.",
+  ["Error al entregar el cráneo; consulta el registro del mod."] = "Could not add the skull; check the mod log.",
+  ["No tienes un trofeo preparado de "] = "You do not have a prepared trophy of ",
+  ["\n↑/↓: alejar/acercar · ←/→: girar · Esc: cancelar"] = "\n↑/↓: move away/closer · ←/→: rotate · Esc: cancel",
+  ["Trofeos de animales"] = "Animal trophies",
+  ["Elige Colocar con el ratón o pulsa el número de la especie.\nApunta donde quieras, ajusta con ↑/↓ y pulsa Enter."] = "Click Place or press the species number.\nAim anywhere, adjust with ↑/↓ and press Enter.",
+  [" sin preparar · "] = " unprepared · ",
+  [" listos"] = " ready",
+  ["Colocar"] = "Place",
+  ["6 — Recoger el trofeo colgado al que apuntas"] = "6 — Pick up the mounted trophy you are aiming at",
+  ["Cerrar"] = "Close",
+  ["Colocación libre"] = "Free placement",
+  ["Colocación libre — Enter: fijar aquí · Distancia: "] = "Free placement — Enter: place here · Distance: ",
+  ["Ya no tienes ese trofeo preparado"] = "You no longer have that prepared trophy",
+  ["El trofeo no tiene identidad persistente; no se ha colocado"] = "The trophy has no persistent identity; it was not placed",
+  ["No se pudo sacar el trofeo de la mochila"] = "Could not remove the trophy from your backpack",
+  ["Trofeo colgado. Ctrl+Alt+F11 y 6 para recogerlo"] = "Trophy mounted. Ctrl+Alt+F11 and 6 to pick it up",
+  ["Apunta a un trofeo colgado cercano antes de abrir el menú y recogerlo."] = "Aim at a nearby mounted trophy before opening the menu to pick it up.",
+  ["Trofeo guardado en la mochila"] = "Trophy placed in your backpack",
+  ["Pared retirada: trofeo devuelto a tu mochila"] = "Wall removed: trophy returned to your backpack",
+  ["No se pudo guardar la colocación del trofeo; consulta Latest.log."] = "Could not save trophy placement; check Latest.log.",
+  ["No hay guardado activo"] = "No active save",
+  ["Falta identidad del trofeo"] = "Trophy identity missing",
+  ["No se encuentran los materiales de la receta"] = "Recipe materials unavailable",
+  ["Faltan herramientas nativas para preparar cráneos"] = "Native tools for preparing skulls unavailable",
+  ["Lobo"] = "Wolf",
+  ["Puma"] = "Cougar",
+  ["Oso"] = "Bear",
+  ["Ciervo"] = "Deer",
+  ["Alce"] = "Moose",
+ };
+}
