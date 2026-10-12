@@ -32,21 +32,15 @@ En un banco de trabajo con luz y herramientas simples o de calidad:
 | Ciervo | 150 minutos |
 | Alce | 180 minutos |
 
-### Colocación y controles
+### Cómo colocarlo
 
-Puedes soltar un trofeo terminado y moverlo con la colocación normal del juego; al apuntar a una pared, la placa se orienta sobre ella. También puedes usar el menú de colocación libre:
+Después de fabricar el trofeo:
 
-| Control | Acción |
-| --- | --- |
-| Ctrl + Alt + F11 | Abrir / cerrar menú |
-| 1 / 2 / 3 / 4 / 5 | Elegir lobo / puma / oso / ciervo / alce |
-| Flecha arriba / abajo | Alejar / acercar la vista previa |
-| Flecha izquierda / derecha | Girar la placa |
-| Enter | Fijar el trofeo |
-| Esc | Cancelar / cerrar |
-| 6 dentro del menú | Recoger el trofeo al que apuntas |
+1. Suéltalo al suelo.
+2. Cógelo para moverlo.
+3. Colócalo donde quieras.
 
-Necesitas el trofeo preparado en la mochila. La colocación libre permite ajustar la distancia entre 0,15 y 8 metros. Recoge los trofeos antes de desmontar un refugio: no se recogen automáticamente con él. La ayuda compartida F9 se integra con BurebistaFishingShelter cuando está instalado.
+**Aunque el trofeo aparezca de color rojo, puedes colocarlo: se quedará en el lugar elegido.**
 
 ### Instalación
 
@@ -70,21 +64,15 @@ Each supported carcass has a **50% chance** to yield a skull after its first com
 
 At a workbench with light and simple or quality tools, use **1 matching raw skull, 1 reclaimed wood and 1 cured gut**. Crafting takes 90 minutes for wolf/cougar, 120 for bear, 150 for deer and 180 for moose.
 
-### Placement and controls
+### How to place it
 
-Drop a finished trophy and move it using the game's normal placement mode; pointing at a wall aligns its plaque with that surface. The free-placement menu offers an alternative:
+After crafting the trophy:
 
-| Control | Action |
-| --- | --- |
-| Ctrl + Alt + F11 | Open / close trophy menu |
-| 1 / 2 / 3 / 4 / 5 | Select wolf / cougar / bear / deer / moose |
-| Up / Down arrows | Move preview farther / closer |
-| Left / Right arrows | Rotate plaque |
-| Enter | Confirm placement |
-| Esc | Cancel / close |
-| 6 inside the menu | Retrieve the trophy you are pointing at |
+1. Drop it on the ground.
+2. Pick it up to move it.
+3. Place it wherever you want.
 
-You must carry a finished trophy. Free-placement distance ranges from 0.15 to 8 metres. Retrieve trophies before packing a shelter; they are not automatically packed with it. Shared F9 hints integrate with BurebistaFishingShelter when installed.
+**Even if the trophy turns red, you can place it: it will stay in the chosen spot.**
 
 ### Installation
 
